@@ -1,19 +1,21 @@
 //
-//  ViewController.swift
+//  SearchViewController.swift
 //  stuff
 //
-//  Created by Yigit on 10.09.2022.
+//  Created by Yigit on 11.09.2022.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
+    
 
+   
 
 }
-

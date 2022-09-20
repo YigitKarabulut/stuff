@@ -13,9 +13,8 @@ class HomeStuffModel {
     static let sharedInstance = HomeStuffModel()
     
     var category = "Home Stuff"
-    var brand = ""
-    var model = ""
-    var status = ""
+    var homePart = ""
+    var stuff = ""
     var advertTitle = ""
     var explanation = ""
     var firsImage = UIImage()

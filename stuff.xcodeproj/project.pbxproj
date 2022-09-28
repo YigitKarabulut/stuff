@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		340832A928D292A70054F1FB /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340832A828D292A70054F1FB /* EditProfileViewController.swift */; };
+		34098E8928DD03DF00F822C8 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34098E8828DD03DF00F822C8 /* LocationViewController.swift */; };
 		3417227128CE6C5000A109FC /* DropDown in Frameworks */ = {isa = PBXBuildFile; productRef = 3417227028CE6C5000A109FC /* DropDown */; };
 		3417227328CE792800A109FC /* PriceAndLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417227228CE792800A109FC /* PriceAndLocationViewController.swift */; };
 		3417227528CE83C600A109FC /* PhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417227428CE83C600A109FC /* PhoneModel.swift */; };
@@ -15,6 +16,14 @@
 		3417227A28CE9C8800A109FC /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3417227928CE9C8800A109FC /* SDWebImageMapKit */; };
 		34364D1828D13245009D2477 /* MyAdvertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34364D1728D13245009D2477 /* MyAdvertsViewController.swift */; };
 		34364D1D28D1404F009D2477 /* AdvertDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34364D1C28D1404F009D2477 /* AdvertDetailsViewController.swift */; };
+		3439A3DB28DA4C3D00B10064 /* BicycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439A3DA28DA4C3D00B10064 /* BicycleModel.swift */; };
+		3439A3DD28DA538400B10064 /* BabyandKidsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439A3DC28DA538400B10064 /* BabyandKidsModel.swift */; };
+		3439A3DF28DA5A6100B10064 /* SporandOutdoorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439A3DE28DA5A6100B10064 /* SporandOutdoorsModel.swift */; };
+		3439A3E128DA5D2C00B10064 /* HobbyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439A3E028DA5D2C00B10064 /* HobbyModel.swift */; };
+		3439A3E328DA77F100B10064 /* ClothingAndAccessoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439A3E228DA77F100B10064 /* ClothingAndAccessoriesModel.swift */; };
+		343F4E6C28DB2A7A001ED244 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F4E6B28DB2A7A001ED244 /* DetailsViewController.swift */; };
+		343F4E7028DBC3D1001ED244 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F4E6F28DBC3D1001ED244 /* ProfileTableViewCell.swift */; };
+		343F4E7228DBC5C2001ED244 /* OtherPofileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343F4E7128DBC5C2001ED244 /* OtherPofileViewController.swift */; };
 		344E660728D8E5AF00F5A1BC /* ElectronicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E660628D8E5AF00F5A1BC /* ElectronicModel.swift */; };
 		344E660928D8E65C00F5A1BC /* HomeStuffModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E660828D8E65C00F5A1BC /* HomeStuffModel.swift */; };
 		3486985428CDDDFE0078EC49 /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3486985328CDDDFE0078EC49 /* SellViewController.swift */; };
@@ -22,6 +31,8 @@
 		34B3C09128CE21C500F401B2 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3C09028CE21C500F401B2 /* ImageViewController.swift */; };
 		34B3D7DB28CD43900056DC3D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3D7DA28CD43900056DC3D /* LoginViewController.swift */; };
 		34B3D7DD28CD46640056DC3D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3D7DC28CD46640056DC3D /* SignupViewController.swift */; };
+		34B3FCFB28DDD70F00A79BF0 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 34B3FCFA28DDD70F00A79BF0 /* MessageKit */; };
+		34B3FD0228DE0E2500A79BF0 /* InputBarAccessoryView in Frameworks */ = {isa = PBXBuildFile; productRef = 34B3FD0128DE0E2500A79BF0 /* InputBarAccessoryView */; };
 		34CE044328CD550F00BBB64F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE044228CD550F00BBB64F /* SearchViewController.swift */; };
 		34CE044528CD572800BBB64F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE044428CD572800BBB64F /* ProfileViewController.swift */; };
 		34D3170328CD2FFC00FB3C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D3170228CD2FFC00FB3C9E /* AppDelegate.swift */; };
@@ -37,10 +48,19 @@
 
 /* Begin PBXFileReference section */
 		340832A828D292A70054F1FB /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		34098E8828DD03DF00F822C8 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		3417227228CE792800A109FC /* PriceAndLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceAndLocationViewController.swift; sourceTree = "<group>"; };
 		3417227428CE83C600A109FC /* PhoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneModel.swift; sourceTree = "<group>"; };
 		34364D1728D13245009D2477 /* MyAdvertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAdvertsViewController.swift; sourceTree = "<group>"; };
 		34364D1C28D1404F009D2477 /* AdvertDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertDetailsViewController.swift; sourceTree = "<group>"; };
+		3439A3DA28DA4C3D00B10064 /* BicycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicycleModel.swift; sourceTree = "<group>"; };
+		3439A3DC28DA538400B10064 /* BabyandKidsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyandKidsModel.swift; sourceTree = "<group>"; };
+		3439A3DE28DA5A6100B10064 /* SporandOutdoorsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SporandOutdoorsModel.swift; sourceTree = "<group>"; };
+		3439A3E028DA5D2C00B10064 /* HobbyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyModel.swift; sourceTree = "<group>"; };
+		3439A3E228DA77F100B10064 /* ClothingAndAccessoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingAndAccessoriesModel.swift; sourceTree = "<group>"; };
+		343F4E6B28DB2A7A001ED244 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		343F4E6F28DBC3D1001ED244 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		343F4E7128DBC5C2001ED244 /* OtherPofileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherPofileViewController.swift; sourceTree = "<group>"; };
 		344E660628D8E5AF00F5A1BC /* ElectronicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectronicModel.swift; sourceTree = "<group>"; };
 		344E660828D8E65C00F5A1BC /* HomeStuffModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStuffModel.swift; sourceTree = "<group>"; };
 		3486985328CDDDFE0078EC49 /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +94,8 @@
 				FBCEF3741213F7080D9DB3AB /* Pods_stuff.framework in Frameworks */,
 				3417227A28CE9C8800A109FC /* SDWebImageMapKit in Frameworks */,
 				3417227128CE6C5000A109FC /* DropDown in Frameworks */,
+				34B3FCFB28DDD70F00A79BF0 /* MessageKit in Frameworks */,
+				34B3FD0228DE0E2500A79BF0 /* InputBarAccessoryView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				34CE044428CD572800BBB64F /* ProfileViewController.swift */,
+				343F4E7128DBC5C2001ED244 /* OtherPofileViewController.swift */,
 				34364D1B28D1402A009D2477 /* myAdverts */,
 				340832A728D292920054F1FB /* editProfile */,
 				34E0413828D513BE0078214D /* help */,
@@ -134,6 +157,11 @@
 				3417227428CE83C600A109FC /* PhoneModel.swift */,
 				344E660628D8E5AF00F5A1BC /* ElectronicModel.swift */,
 				344E660828D8E65C00F5A1BC /* HomeStuffModel.swift */,
+				3439A3DA28DA4C3D00B10064 /* BicycleModel.swift */,
+				3439A3DC28DA538400B10064 /* BabyandKidsModel.swift */,
+				3439A3DE28DA5A6100B10064 /* SporandOutdoorsModel.swift */,
+				3439A3E028DA5D2C00B10064 /* HobbyModel.swift */,
+				3439A3E228DA77F100B10064 /* ClothingAndAccessoriesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +177,8 @@
 				34B3D7DA28CD43900056DC3D /* LoginViewController.swift */,
 				34B3D7DC28CD46640056DC3D /* SignupViewController.swift */,
 				34CE044228CD550F00BBB64F /* SearchViewController.swift */,
+				343F4E6B28DB2A7A001ED244 /* DetailsViewController.swift */,
+				34098E8828DD03DF00F822C8 /* LocationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				34D3171628CD326F00FB3C9E /* FeedTableViewCell.swift */,
+				343F4E6F28DBC3D1001ED244 /* ProfileTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -247,6 +278,8 @@
 				3417227028CE6C5000A109FC /* DropDown */,
 				3417227728CE9C8800A109FC /* SDWebImage */,
 				3417227928CE9C8800A109FC /* SDWebImageMapKit */,
+				34B3FCFA28DDD70F00A79BF0 /* MessageKit */,
+				34B3FD0128DE0E2500A79BF0 /* InputBarAccessoryView */,
 			);
 			productName = stuff;
 			productReference = 34D316FF28CD2FFC00FB3C9E /* stuff.app */;
@@ -279,6 +312,8 @@
 			packageReferences = (
 				3417226F28CE6C5000A109FC /* XCRemoteSwiftPackageReference "DropDown" */,
 				3417227628CE9C8800A109FC /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				34B3FCF928DDD70F00A79BF0 /* XCRemoteSwiftPackageReference "MessageKit" */,
+				34B3FD0028DE0E2500A79BF0 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */,
 			);
 			productRefGroup = 34D3170028CD2FFC00FB3C9E /* Products */;
 			projectDirPath = "";
@@ -353,9 +388,15 @@
 				34364D1828D13245009D2477 /* MyAdvertsViewController.swift in Sources */,
 				34B3D7DD28CD46640056DC3D /* SignupViewController.swift in Sources */,
 				34CE044328CD550F00BBB64F /* SearchViewController.swift in Sources */,
+				3439A3E328DA77F100B10064 /* ClothingAndAccessoriesModel.swift in Sources */,
+				343F4E7228DBC5C2001ED244 /* OtherPofileViewController.swift in Sources */,
+				3439A3DF28DA5A6100B10064 /* SporandOutdoorsModel.swift in Sources */,
+				34098E8928DD03DF00F822C8 /* LocationViewController.swift in Sources */,
 				344E660928D8E65C00F5A1BC /* HomeStuffModel.swift in Sources */,
 				3486985428CDDDFE0078EC49 /* SellViewController.swift in Sources */,
 				344E660728D8E5AF00F5A1BC /* ElectronicModel.swift in Sources */,
+				343F4E7028DBC3D1001ED244 /* ProfileTableViewCell.swift in Sources */,
+				3439A3DB28DA4C3D00B10064 /* BicycleModel.swift in Sources */,
 				34D3170728CD2FFC00FB3C9E /* FeedViewController.swift in Sources */,
 				34CE044528CD572800BBB64F /* ProfileViewController.swift in Sources */,
 				3486985728CDE8A50078EC49 /* InfoViewController.swift in Sources */,
@@ -363,11 +404,14 @@
 				34D3170328CD2FFC00FB3C9E /* AppDelegate.swift in Sources */,
 				34B3D7DB28CD43900056DC3D /* LoginViewController.swift in Sources */,
 				34E0413A28D513E30078214D /* HelpViewController.swift in Sources */,
+				3439A3E128DA5D2C00B10064 /* HobbyModel.swift in Sources */,
 				3417227328CE792800A109FC /* PriceAndLocationViewController.swift in Sources */,
+				343F4E6C28DB2A7A001ED244 /* DetailsViewController.swift in Sources */,
 				3417227528CE83C600A109FC /* PhoneModel.swift in Sources */,
 				34B3C09128CE21C500F401B2 /* ImageViewController.swift in Sources */,
 				34364D1D28D1404F009D2477 /* AdvertDetailsViewController.swift in Sources */,
 				34D3170528CD2FFC00FB3C9E /* SceneDelegate.swift in Sources */,
+				3439A3DD28DA538400B10064 /* BabyandKidsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +649,22 @@
 				kind = branch;
 			};
 		};
+		34B3FCF928DDD70F00A79BF0 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		34B3FD0028DE0E2500A79BF0 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nathantannar4/InputBarAccessoryView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -622,6 +682,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3417227628CE9C8800A109FC /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
+		};
+		34B3FCFA28DDD70F00A79BF0 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34B3FCF928DDD70F00A79BF0 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+		34B3FD0128DE0E2500A79BF0 /* InputBarAccessoryView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34B3FD0028DE0E2500A79BF0 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */;
+			productName = InputBarAccessoryView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -11,9 +11,7 @@ import Parse
 class SignupViewController: UIViewController {
     
     
-    @IBOutlet weak var txtName: UITextField!
-    
-    @IBOutlet weak var txtSurname: UITextField!
+
     
     @IBOutlet weak var txtUsername: UITextField!
     
@@ -31,11 +29,12 @@ class SignupViewController: UIViewController {
     
     @IBAction func btnSignupClicked(_ sender: Any) {
         
-        if txtUsername.text != "" && txtEmail.text != "" && txtPassword.text != "" && txtPasswordAgain.text != "" && txtName.text != "" && txtSurname.text != ""  {
+        if txtUsername.text != "" && txtEmail.text != "" && txtPassword.text != "" && txtPasswordAgain.text != ""  {
 
             if txtPassword.text == txtPasswordAgain.text  {
                 if  txtPassword.text!.count > 6 {
                     if txtEmail.text!.contains("@"){
+                        
                         let user = PFUser()
                             user.username = txtUsername.text!
                             user.email = txtEmail.text!
@@ -66,6 +65,7 @@ class SignupViewController: UIViewController {
         
     }
     
+ 
     func makeAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         let okButton = UIAlertAction(title: "OK", style: .default)

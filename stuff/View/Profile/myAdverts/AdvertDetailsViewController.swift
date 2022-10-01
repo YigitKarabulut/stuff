@@ -17,16 +17,24 @@ class AdvertDetailsViewController: UIViewController {
     @IBOutlet weak var lblExplanation: UILabel!
     
     
+    @IBOutlet weak var btnSold: UIButton!
     @IBOutlet weak var lblPrice: UILabel!
     
 
     var chosenId = ""
+    var isSold = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         getAdvertDetailsData()
+        
+        if isSold == true {
+            btnSold.isEnabled = false
+        } else {
+            btnSold.isEnabled = true
+        }
     }
     
 
@@ -101,6 +109,21 @@ class AdvertDetailsViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
+   
+    @IBAction func btnSoldClicked(_ sender: Any) {
+        let query = PFQuery(className: "Adverts")
+        query.getObjectInBackground(withId: self.chosenId) { object, error in
+            if error != nil {
+                self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
+            } else {
+                if let object = object {
+                    object["isSold"] = true
+                    object.saveInBackground()
+                }
+            }
+        }
+        
+    }
     
     func makeAlert(title: String, message: String){
            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

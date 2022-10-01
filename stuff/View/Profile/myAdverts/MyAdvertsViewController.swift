@@ -15,12 +15,20 @@ class MyAdvertsViewController: UIViewController, UITableViewDelegate, UITableVie
     var advertNameArray = [String]()
     var idArray = [String]()
     var selectId = ""
+    var isSold = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         advertsTableView.delegate = self
         advertsTableView.dataSource = self
+        
+        
+        
+        
+     
+        
         
         
         
@@ -47,6 +55,11 @@ class MyAdvertsViewController: UIViewController, UITableViewDelegate, UITableVie
                         if let advertsName = object.object(forKey: "advertTitle") as? String? {
                             self.advertNameArray.append(advertsName!)
                         }
+                        if let isSold = object.object(forKey: "isSold") as? Bool {
+                            if isSold == true {
+                                self.isSold = isSold
+                            }
+                        }
                     }
                     self.advertsTableView.reloadData()
                     }
@@ -69,13 +82,17 @@ class MyAdvertsViewController: UIViewController, UITableViewDelegate, UITableVie
         if segue.identifier == "advertstodetailsadvert" {
             let destinationVC = segue.destination as! AdvertDetailsViewController
             destinationVC.chosenId = selectId
+            destinationVC.isSold = isSold
         }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         var content = cell.defaultContentConfiguration()
         content.text = self.advertNameArray[indexPath.row]
+        content.secondaryText = self.isSold ?  "*sold" : "*on sale"
+        
         cell.contentConfiguration = content
+        
         return cell
     }
     

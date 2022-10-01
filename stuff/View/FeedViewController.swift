@@ -57,7 +57,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func getData(){
         let query = PFQuery(className: "Adverts")
-        query.whereKeyExists("imageUrl").whereKey("username", notEqualTo: PFUser.current()!.username!).findObjectsInBackground { objects, error in
+        query.whereKeyExists("imageUrl").whereKey("isSold", equalTo: false).whereKey("username", notEqualTo: PFUser.current()!.username!).findObjectsInBackground { objects, error in
             if error != nil {
                 self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
             } else {

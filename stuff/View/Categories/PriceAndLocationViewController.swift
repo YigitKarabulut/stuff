@@ -26,6 +26,7 @@ class PriceAndLocationViewController: UIViewController, CLLocationManagerDelegat
     var selectCategory = ""
     var name = ""
     var surname = ""
+    let isSold = false
     
     
     override func viewDidLoad() {
@@ -242,6 +243,7 @@ class PriceAndLocationViewController: UIViewController, CLLocationManagerDelegat
                     object["price"] = txtPrice.text!
                     object["latitude"] = phoneModel.locationLatitude
                     object["longitude"] = phoneModel.locationLongitude
+                    object["isSold"] = self.isSold
                     
                     if let imageData1 = phoneModel.firsImage.jpegData(compressionQuality: 0.5) {
                                 object["image1"] = PFFileObject(name: "image1.jpg", data: imageData1)
@@ -271,6 +273,7 @@ class PriceAndLocationViewController: UIViewController, CLLocationManagerDelegat
                     object["price"] = txtPrice.text!
                     object["latitude"] = homeStuffModel.locationLatitude
                     object["longitude"] = homeStuffModel.locationLongitude
+                    object["isSold"] = self.isSold
                     
                     if let imageData1 = homeStuffModel.firsImage.jpegData(compressionQuality: 0.5) {
                                 object["image1"] = PFFileObject(name: "image1.jpg", data: imageData1)
@@ -300,6 +303,7 @@ class PriceAndLocationViewController: UIViewController, CLLocationManagerDelegat
                     object["price"] = txtPrice.text!
                     object["latitude"] =  ElectronicModel.sharedInstance.locationLatitude
                     object["longitude"] =  ElectronicModel.sharedInstance.locationLongitude
+                    object["isSold"] = self.isSold
                     
                     if let imageData1 =  ElectronicModel.sharedInstance.firsImage.jpegData(compressionQuality: 0.5) {
                                 object["image1"] = PFFileObject(name: "image1.jpg", data: imageData1)
@@ -329,6 +333,7 @@ class PriceAndLocationViewController: UIViewController, CLLocationManagerDelegat
                     object["price"] = txtPrice.text!
                     object["latitude"] =  BicycleModel.sharedInstance.locationLatitude
                     object["longitude"] =  BicycleModel.sharedInstance.locationLongitude
+                    object["isSold"] = self.isSold
                     
                     if let imageData1 =  BicycleModel.sharedInstance.firsImage.jpegData(compressionQuality: 0.5) {
                                 object["image1"] = PFFileObject(name: "image1.jpg", data: imageData1)
@@ -358,6 +363,7 @@ class PriceAndLocationViewController: UIViewController, CLLocationManagerDelegat
                     object["price"] = txtPrice.text!
                     object["latitude"] =  BabyandKidsModel.sharedInstance.locationLatitude
                     object["longitude"] =  BabyandKidsModel.sharedInstance.locationLongitude
+                    object["isSold"] = self.isSold
                     
                     if let imageData1 =  BabyandKidsModel.sharedInstance.firsImage.jpegData(compressionQuality: 0.5) {
                                 object["image1"] = PFFileObject(name: "image1.jpg", data: imageData1)
@@ -387,6 +393,7 @@ class PriceAndLocationViewController: UIViewController, CLLocationManagerDelegat
                     object["price"] = txtPrice.text!
                     object["latitude"] =  SportsandOutdoorsModel.sharedInstance.locationLatitude
                     object["longitude"] =  SportsandOutdoorsModel.sharedInstance.locationLongitude
+                    object["isSold"] = self.isSold
                     
                     if let imageData1 =  SportsandOutdoorsModel.sharedInstance.firsImage.jpegData(compressionQuality: 0.5) {
                                 object["image1"] = PFFileObject(name: "image1.jpg", data: imageData1)
@@ -416,6 +423,7 @@ class PriceAndLocationViewController: UIViewController, CLLocationManagerDelegat
                     object["price"] = txtPrice.text!
                     object["latitude"] =  HobbyModel.sharedInstance.locationLatitude
                     object["longitude"] =  HobbyModel.sharedInstance.locationLongitude
+                    object["isSold"] = self.isSold
                     
                     if let imageData1 =  HobbyModel.sharedInstance.firsImage.jpegData(compressionQuality: 0.5) {
                                 object["image1"] = PFFileObject(name: "image1.jpg", data: imageData1)
@@ -445,6 +453,7 @@ class PriceAndLocationViewController: UIViewController, CLLocationManagerDelegat
                     object["price"] = txtPrice.text!
                     object["latitude"] =  ClothingAndAccessoriesModel.sharedInstance.locationLatitude
                     object["longitude"] =  ClothingAndAccessoriesModel.sharedInstance.locationLongitude
+                    object["isSold"] = self.isSold
                     
                     if let imageData1 =  ClothingAndAccessoriesModel.sharedInstance.firsImage.jpegData(compressionQuality: 0.5) {
                                 object["image1"] = PFFileObject(name: "image1.jpg", data: imageData1)

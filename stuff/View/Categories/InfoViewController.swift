@@ -57,13 +57,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         txtExplanation.placeholder = explanationText
         
         
-
-        
-
-       
-       
-        
-        
+    
         
       
     }
@@ -72,7 +66,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         self.dismiss(animated: true)
     }
     
-    
+
  
   
   
@@ -81,6 +75,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == txtFirstInfo {
+            self.txtFirstInfo.endEditing(true)
             dropDown.anchorView = txtFirstInfo
             dropDown.dataSource = firstInfoList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -93,6 +88,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Apple"{
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = PhoneModel.sharedInstance.appleList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -105,6 +101,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Samsung" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = PhoneModel.sharedInstance.samsungList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -117,6 +114,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Xiaomi" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = PhoneModel.sharedInstance.xiaomiList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -129,6 +127,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Huawei" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = PhoneModel.sharedInstance.huaewiList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -141,6 +140,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Living room" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = HomeStuffModel.sharedInstance.livingRoomList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -152,6 +152,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Bedroom" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = HomeStuffModel.sharedInstance.bedroomList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -163,6 +164,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Kitchen" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = HomeStuffModel.sharedInstance.kitchenList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -174,6 +176,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Cellar" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = HomeStuffModel.sharedInstance.cellarList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -185,6 +188,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Bathroom" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = HomeStuffModel.sharedInstance.bathroomList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -196,6 +200,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Laptop" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ElectronicModel.sharedInstance.laptopList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -207,6 +212,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Smart Watch" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ElectronicModel.sharedInstance.smartwatchList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -219,6 +225,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Game Consoles" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ElectronicModel.sharedInstance.gameconsolesList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -231,6 +238,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Camera" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ElectronicModel.sharedInstance.cameraList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -242,6 +250,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Tablet" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ElectronicModel.sharedInstance.tabletList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -253,6 +262,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Phone Accessories" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ElectronicModel.sharedInstance.phoneAccessoriesList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -264,6 +274,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Computer Accessories" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ElectronicModel.sharedInstance.computerAccessoriesList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -275,6 +286,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Headphone" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ElectronicModel.sharedInstance.headphoneList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -287,6 +299,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "TV" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ElectronicModel.sharedInstance.tvList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -298,6 +311,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Desktop Computer" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ElectronicModel.sharedInstance.desktopComputerList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -310,6 +324,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Bicycle" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = BicycleModel.sharedInstance.yearList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -322,6 +337,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Baby Clothing" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = BabyandKidsModel.sharedInstance.genderList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -333,6 +349,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "Baby Stuff" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = BabyandKidsModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -344,6 +361,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
             dropDown.show()
         }
         if textField == txtSecondInfo && txtFirstInfo.text == "The Stroller" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = BabyandKidsModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -356,6 +374,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Toys" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = BabyandKidsModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -368,6 +387,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Baby Books" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = BabyandKidsModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -380,6 +400,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Other" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = BabyandKidsModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -392,6 +413,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Sports Equipment" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = SportsandOutdoorsModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -404,6 +426,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Exercise Equipment" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = SportsandOutdoorsModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -417,6 +440,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Pet Products" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = HobbyModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -429,6 +453,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Musical Instruments" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = HobbyModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -441,6 +466,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Film and Music" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = HobbyModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -453,6 +479,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Book" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = HobbyModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -465,6 +492,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Board Games" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = HobbyModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -477,6 +505,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Clothing" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ClothingAndAccessoriesModel.sharedInstance.bodySizeList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -489,6 +518,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Shoes" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ClothingAndAccessoriesModel.sharedInstance.shoesSizeList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -501,6 +531,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Jewelry" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ClothingAndAccessoriesModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -513,6 +544,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Watch" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ClothingAndAccessoriesModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -525,6 +557,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Bag" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ClothingAndAccessoriesModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -537,6 +570,7 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         }
         
         if textField == txtSecondInfo && txtFirstInfo.text == "Personal Care and Beauty" {
+            self.txtSecondInfo.endEditing(true)
             dropDown.anchorView = txtSecondInfo
             dropDown.dataSource = ClothingAndAccessoriesModel.sharedInstance.statusList
             dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
@@ -660,6 +694,11 @@ class InfoViewController: UIViewController, UITextFieldDelegate{
         self.present(alert, animated: true)
         
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
     }
   
     

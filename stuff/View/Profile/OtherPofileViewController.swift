@@ -107,7 +107,7 @@ class OtherPofileViewController: UIViewController, UITableViewDelegate, UITableV
     
     func getSuccessAdvertTradeData(){
         let query = PFQuery(className: "Adverts")
-        query.whereKey("isSold", equalTo: true).findObjectsInBackground { objects, error in
+        query.whereKey("username", equalTo: chosenAdvertUsernameId).whereKey("isSold", equalTo: true).findObjectsInBackground { objects, error in
             if error != nil {
 //                makeAlert
             } else {

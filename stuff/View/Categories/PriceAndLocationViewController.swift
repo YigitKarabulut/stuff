@@ -27,6 +27,7 @@ class PriceAndLocationViewController: UIViewController, CLLocationManagerDelegat
     var name = ""
     var surname = ""
     let isSold = false
+
     
     
     override func viewDidLoad() {

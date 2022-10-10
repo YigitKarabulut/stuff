@@ -25,6 +25,8 @@ class MyAdvertsViewController: UIViewController, UITableViewDelegate, UITableVie
         advertsTableView.dataSource = self
         
         
+
+        
         
         
      
@@ -37,6 +39,7 @@ class MyAdvertsViewController: UIViewController, UITableViewDelegate, UITableVie
         
     }
     
+
     
    
      @objc func getAdvertsData(){
